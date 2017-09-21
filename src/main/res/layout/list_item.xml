@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="14dp"
+        android:id="@+id/current_time"
+        android:text="12:00 AM"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/weather_image"
+        android:layout_marginTop="4dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/weather_cloudy"
+        android:layout_below="@+id/current_time"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/temperature_hourly"
+        android:text="12"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/weather_image"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
